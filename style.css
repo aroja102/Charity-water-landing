@@ -1,266 +1,159 @@
-/* Reset default spacing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Main page styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
   color: #1f2933;
-  background-color: #ffffff;
+  line-height: 1.6;
 }
 
-/* Header / Navigation */
-.site-header {
-  background-color: #ffffff;
+/* Header */
+header {
+  background: white;
+  padding: 20px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 8%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #111827;
 }
 
-.logo span,
-.site-footer span {
-  color: #00A6B4;
+.logo span {
+  color: #00a9a5;
 }
 
-.nav-links a {
+nav a {
+  margin-left: 30px;
   text-decoration: none;
   color: #1f2933;
-  margin-left: 24px;
   font-weight: bold;
 }
 
-.nav-links a:hover {
-  color: #00A6B4;
+nav a:hover {
+  color: #00a9a5;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  min-height: 85vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   padding: 80px 8%;
-
-  /* Replace this image with your own image in an img folder */
-  .hero {
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  padding: 80px 8%;
-
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('hero.jpg');
-
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("hero.jpg");
   background-size: cover;
   background-position: center;
-
   color: white;
-  text-align: center;
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 650px;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.1;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.25rem;
-  margin-bottom: 32px;
-  max-width: 620px;
-}
-
-/* Yellow CTA Button */
-.cta-button {
-  display: inline-block;
-  background-color: #FFC700;
-  color: #111827;
-  text-decoration: none;
-  padding: 16px 30px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.cta-button:hover {
-  background-color: #ffd84d;
-  transform: translateY(-3px);
-}
-
-/* Story / Impact Section */
-.story-section {
-  background-color: #EAF8FA;
-  padding: 80px 8%;
-}
-
-.section-container {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.story-text {
-  flex: 1;
-}
-
-.story-text h2,
-.donation-content h2 {
-  font-size: 2.4rem;
-  color: #004E64;
-  margin-bottom: 20px;
-}
-
-.story-text p {
-  font-size: 1.1rem;
-}
-
-.impact-card {
-  flex: 1;
-  background-color: #ffffff;
-  padding: 36px;
-  border-radius: 16px;
-  border-top: 10px solid #FFC700;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-.impact-card h3 {
-  font-size: 4rem;
-  color: #00A6B4;
-  margin-bottom: 12px;
-}
-
-.impact-card p {
-  font-size: 1.05rem;
-}
-
-/* Donation CTA Section */
-.donation-section {
-  background-color: #004E64;
-  color: #ffffff;
-  padding: 80px 8%;
-  text-align: center;
-}
-
-.donation-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.donation-content h2 {
-  color: #ffffff;
-}
-
-.donation-content p {
-  font-size: 1.15rem;
   margin-bottom: 30px;
 }
 
-/* Footer */
-.site-footer {
-  background-color: #111827;
-  color: #ffffff;
-  text-align: center;
-  padding: 28px 8%;
-}
-
-.site-footer p:first-child {
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #FFC700;
+  color: #111;
+  padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 6px;
+  font-size: 1.1rem;
 }
 
-/* Mobile-Friendly Layout */
+.btn:hover {
+  background-color: #e6b800;
+  transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+  padding: 70px 8%;
+}
+
+.story {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.impact {
+  background-color: #e6f7ff;
+  text-align: center;
+}
+
+.donation-cta {
+  background-color: #00404e;
+  color: white;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 30px 8%;
+}
+
+footer span {
+  color: #00a9a5;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-  .site-header {
+  header {
     flex-direction: column;
-    gap: 16px;
-    text-align: center;
+    gap: 15px;
   }
 
-  .nav-links a {
-    display: inline-block;
-    margin: 6px 10px;
+  nav a {
+    margin: 0 8px;
+    font-size: 0.9rem;
   }
 
   .hero {
-    min-height: 75vh;
     text-align: center;
     justify-content: center;
     padding: 70px 6%;
   }
 
   .hero h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .hero p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
-
-  .section-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .story-text h2,
-  .donation-content h2 {
-    font-size: 2rem;
-  }
-
-  .impact-card h3 {
-    font-size: 3rem;
-  }
-}
-/* Bigger CTA button */
-.btn {
-  background-color: #FFC700;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-}
-
-/* Hover effect */
-.btn:hover {
-  background-color: #e6b800;
-}
-
-/* Section spacing */
-section {
-  padding: 60px 20px;
-}
-
-/* Light blue section */
-.impact {
-  background-color: #e6f7ff;
-}
-
-/* Sticky header */
-header {
-  position: sticky;
-  top: 0;
 }
