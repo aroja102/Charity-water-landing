@@ -223,3 +223,34 @@ body {
     font-size: 3rem;
   }
 }
+/* Bigger CTA button */
+.btn {
+  background-color: #FFC700;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #e6b800;
+}
+
+/* Section spacing */
+section {
+  padding: 60px 20px;
+}
+
+/* Light blue section */
+.impact {
+  background-color: #e6f7ff;
+}
+
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+}
